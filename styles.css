@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-content: center;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(5, 2, 65) 0%, rgb(40, 30, 128) 57%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgb(35, 45, 149) 68%, rgb(26, 79, 214) 100%);
     color: #F1EEEF;;
     Font-Family: 'Roboto Condensed', Sans-Serif;
     Font-Size: 1.5rem;
@@ -143,15 +143,27 @@ ul {
     justify-content: space-around;
     align-content:stretch;
 }
-.contact address{
+.contact address a{
+    text-decoration: none;
+    border-bottom:#202020;
 
 }
 .contact-links{
-    text-decoration: none;
-    border-bottom:#202020;
+    
     color: #202020;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}    
+.contact-links a {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
 }
-
+.contact-links a img {
+    object-fit: cover;
+    transition: 0.4s ease-in;
+}
+.contact-links a img:hover{
+    transform: translateY(5px);
+}
