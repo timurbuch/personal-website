@@ -136,6 +136,7 @@ ul {
 }
 .contact {
     color:#202020 ;
+    background-color: #d2d2d2;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -145,9 +146,12 @@ ul {
 .contact address{
 
 }
-.contact a{
+.contact-links{
     text-decoration: none;
     border-bottom:#202020;
     color: #202020;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
