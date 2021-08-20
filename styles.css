@@ -18,9 +18,9 @@ header {
     align-content: center;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgb(5, 2, 65) 0%, rgb(40, 30, 128) 57%, rgba(0,212,255,1) 100%);
-    color: ghostwhite;
+    color: #F1EEEF;;
     Font-Family: 'Roboto Condensed', Sans-Serif;
-    Font-Size: 2rem;
+    Font-Size: 1.5rem;
     
 }
 h1 {
@@ -29,27 +29,28 @@ h1 {
     font-weight: bolder;
     margin-left: 5%;
 }
+h1, h2, h3 {
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    color: #F1EEEF;
+}
 nav {
     margin:5vh 5vw;
     font-weight: 800;
     width:10vw;
     flex-wrap: wrap;
-
-
-    
 }
 nav a {
     text-decoration: none;
     border-bottom: #F1EEEF;
     color: ghostwhite;
+    font-weight: bold;
     width: 100px;
     border-radius: 1rem;
     text-align: justify;
+    transition: 0.4s ease;
 }
-a:hover {
-    color: rgb(40, 30, 128);
-    background-color: ghostwhite;
-    border: 1px inset rgb(160, 153, 153);
+nav a:hover {
+    font-size: 1.7rem;
 }
 .hero {
     font-size: 3rem;
@@ -84,6 +85,7 @@ section{
     font-family: 'Cabin', Sans-Serif;
     font-size: 16px;
     padding: 2rem;
+    
 }
 h2 {
     margin-left: 0 10%;
@@ -104,28 +106,34 @@ ul {
     border:#F1EEEF 2px solid;
     border-radius: 1rem;
     padding: 3px;
-    width: 100px;
+    width: 105px;
+    height: 105px;
     text-align: center;
-    box-shadow: 0px 7px 10px rgba(black, 0.5)
-    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(black, 0.5);
+    background-color: #d2d2d2;
+    transition: 0.4s ease-in-out;
+}
+.card:hover{
+    transform: translateY(-5px);
+    background-color: #F1EEEF;
 }
 .card img {
     height: 80%;
     width: 80%;
 }
-.card:hover{
-    transform: translateY(-5px);
+
+.interests {
+    margin-top: 0;
 }
-.interests {margin-top: 0;}
 .interests, .skills {
     background-color: #232D95;
 }
 
 
 li {
-    background-color: #d2d2d2;
+    
     transition: 0.4s ease-out
 }
 li:hover {
-    background-color: #F1EEEF;
+    
 }
