@@ -8,6 +8,7 @@ html {
   }
 body {
      margin: 0;
+     background-color: #F1EEEF;
 }
 header {
     display: flex;
@@ -17,9 +18,9 @@ header {
     align-content: center;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgb(5, 2, 65) 0%, rgb(40, 30, 128) 57%, rgba(0,212,255,1) 100%);
-    color: ghostwhite;
+    color: #F1EEEF;;
     Font-Family: 'Roboto Condensed', Sans-Serif;
-    Font-Size: 2rem;
+    Font-Size: 1.5rem;
     
 }
 h1 {
@@ -28,29 +29,28 @@ h1 {
     font-weight: bolder;
     margin-left: 5%;
 }
-nav {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin:7%;
-    font-weight: 800;
-    width:10%;
-    flex-wrap: wrap;
-
-
-    
+h1, h2, h3 {
+    Font-Family: 'Roboto Condensed', Sans-Serif;
 }
-a {
+nav {
+    margin:5vh 5vw;
+    font-weight: 800;
+    width:10vw;
+    flex-wrap: wrap;
+}
+nav a {
     text-decoration: none;
-    color: ghostwhite;
+    border-bottom: #F1EEEF;
+    color: #F1EEEF;
+    font-weight: bold;
     width: 100px;
     border-radius: 1rem;
     text-align: justify;
+    transition: 0.4s ease;
 }
-a:hover {
-    color: rgb(40, 30, 128);
-    background-color: ghostwhite;
-    border: 1px inset rgb(160, 153, 153);
+nav a:hover {
+    font-size: 1.6rem;
+    color: ghostwhite;
 }
 .hero {
     font-size: 3rem;
@@ -64,6 +64,12 @@ a:hover {
     height: 70vh;
     background-image: url(img/simon-lohmann-zOPXtZkB9_k-unsplash.jpg);
     background-size: cover;
+    filter: grayscale(50%);
+}
+.hero h2 {
+    margin:0 10%;
+    font-size: 3rem;
+    font-weight: normal;
 }
 figure {
     background-color:lightblue;
@@ -79,10 +85,17 @@ section{
     font-family: 'Cabin', Sans-Serif;
     font-size: 16px;
     padding: 2rem;
+    
 }
 h2 {
-    margin-left: 45%;
+    margin-left: 0 10%;
     margin-bottom: 2rem;
+}
+.interests h2{
+    color:#F1EEEF;
+}
+.skills h2{
+    color:#F1EEEF;
 }
 ul {
     list-style-type: none;
@@ -91,35 +104,54 @@ ul {
     justify-content: space-evenly;
     align-content: space-between;
     align-items: stretch;
+    flex-wrap: wrap;
+    margin: 2% 2%;
+    padding: 2% 2%;
 }
 .card {
-    border:oldlace 2px solid;
+    border:#F1EEEF 2px solid;
     border-radius: 1rem;
     padding: 3px;
-    width: 100px;
+    width: 105px;
+    height: 105px;
     text-align: center;
-    box-shadow: 0px 7px 10px rgba(black, 0.5)
-    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(black, 0.5);
+    background-color: #d2d2d2;
+    transition: 0.4s ease-in-out;
+}
+.card:hover{
+    transform: translateY(-5px);
+    background-color: #F1EEEF;
 }
 .card img {
     height: 80%;
     width: 80%;
 }
-.card:hover{
-    transform: translateY(-5px);
-}
+
 .interests {
+    margin-top: 0;
+}
+.interests, .skills {
     background-color: #232D95;
 }
-.skills {
+.contact {
+    color:#202020 ;
     background-color: #d2d2d2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content:stretch;
 }
-.skills li{
-    color:#d2d2d2; ;
+.contact address{
+
 }
-.interests li {
-    background-color: #d2d2d2;
+.contact-links{
+    text-decoration: none;
+    border-bottom:#202020;
+    color: #202020;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-.skills li {
-    background-color: #232D95;
-}
+
