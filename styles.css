@@ -30,19 +30,17 @@ h1 {
     margin-left: 5%;
 }
 nav {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin:7%;
+    margin:5vh 5vw;
     font-weight: 800;
-    width:10%;
+    width:10vw;
     flex-wrap: wrap;
 
 
     
 }
-a {
+nav a {
     text-decoration: none;
+    border-bottom: #F1EEEF;
     color: ghostwhite;
     width: 100px;
     border-radius: 1rem;
