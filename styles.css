@@ -31,7 +31,6 @@ h1 {
 }
 h1, h2, h3 {
     Font-Family: 'Roboto Condensed', Sans-Serif;
-    color: #F1EEEF;
 }
 nav {
     margin:5vh 5vw;
@@ -92,6 +91,12 @@ h2 {
     margin-left: 0 10%;
     margin-bottom: 2rem;
 }
+.interests h2{
+    color:#F1EEEF;
+}
+.skills h2{
+    color:#F1EEEF;
+}
 ul {
     list-style-type: none;
     display: flex;
@@ -128,5 +133,21 @@ ul {
 }
 .interests, .skills {
     background-color: #232D95;
+}
+.contact {
+    color:#202020 ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content:stretch;
+}
+.contact address{
+
+}
+.contact a{
+    text-decoration: none;
+    border-bottom:#202020;
+    color: #202020;
 }
 
