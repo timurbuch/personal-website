@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box; 
+    scroll-behavior: smooth;
   }
   
 * {
@@ -13,10 +14,9 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
-    height: 30vh;
+    height: 20vh;
     justify-content: space-between;
     align-content: center;
-    background: rgb(2,0,36);
     background: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgb(35, 45, 149) 68%, rgb(26, 79, 214) 100%);
     color: #F1EEEF;;
     Font-Family: 'Roboto Condensed', Sans-Serif;
@@ -57,13 +57,12 @@ nav a:hover {
     color: ghostwhite;
     Font-Family: 'Roboto Condensed', Sans-Serif;
     text-align: center;
-    display: flex;
-    flex-direction: row;
     align-content:center;
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     background-image: url(img/simon-lohmann-zOPXtZkB9_k-unsplash.jpg);
     background-size: cover;
+    background-position: center;
     filter: grayscale(50%);
 }
 .hero h2 {
@@ -111,6 +110,7 @@ ul {
 .card {
     border:#F1EEEF 2px solid;
     border-radius: 1rem;
+    margin-top: 1rem;
     padding: 3px;
     width: 105px;
     height: 105px;
@@ -143,21 +143,29 @@ ul {
     justify-content: space-around;
     align-content:stretch;
 }
+.contact address {
+    font-style: normal;
+    font-weight: lighter;
+
+}
 .contact address a{
+    color: #202020;
     text-decoration: none;
-    border-bottom:#202020;
+    border-bottom:1px solid #202020;
+    
 
 }
 .contact-links{
-    
     color: #202020;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 2rem;
 }    
-.contact-links a {
-    width: 105px;
-    height: 105px;
+.contact-links a {    
+    width: 95px;
+    height: 95px;
     object-fit: cover;
 }
 .contact-links a img {
@@ -166,4 +174,19 @@ ul {
 }
 .contact-links a img:hover{
     transform: translateY(5px);
+}
+.bio {
+    background-color: #1a4fd6;
+    color:#F1EEEF;
+    ;
+}
+.cv {
+    background-color: #d2d2d2;
+    color: #202020;
+}
+.footer {
+    background-color: #202020;
+    color: #F1EEEF;
+    margin:0;
+    text-align: center;
 }
