@@ -146,12 +146,12 @@ ul {
     align-content:stretch;
 }
 .contact address a{
+    color: #202020;
     text-decoration: none;
-    border-bottom:#202020;
+    border-bottom:1px solid #202020;
 
 }
 .contact-links{
-    
     color: #202020;
     display: flex;
     flex-direction: row;
