@@ -65,7 +65,7 @@ nav a:hover {
     background-position: center;
     filter: grayscale(50%);
 }
-.hero h2 {
+.hero p {
     margin:0 10%;
     font-size: 3rem;
     font-weight: normal;
@@ -187,6 +187,23 @@ ul {
 .footer {
     background-color: #202020;
     color: #F1EEEF;
+}
+.footer-flex {
+    height: 20vh;
     margin:0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer a {
+    background-color: #d2d2d2;
+    border-radius: 1rem;
+    height: 65px;
+    width: 65px;
+}
+.footer img {
+    width: 55px;
+    height: 55px;
+    object-fit:fill;
+    fill:#d2d2d2
 }
