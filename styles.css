@@ -86,15 +86,6 @@ nav a:hover {
     font-size: 3rem;
     font-weight: normal;
 }
-figure {
-    background-color:lightblue;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-Family: 'Cabin', Sans-Serif;
-}
 section{
     margin-top: 5rem;
     font-family: 'Cabin', Sans-Serif;
@@ -148,7 +139,7 @@ ul {
     margin-top: 0;
 }
 .interests, .skills {
-    background-color: #232D95;
+    background: linear-gradient(180deg, rgba(35,45,149,1) 0%, rgba(26,79,214,1) 100%);
 }
 .contact {
     color:#202020 ;
@@ -194,13 +185,34 @@ ul {
     transform: translateY(5px);
 }
 .bio {
-    background-color: #1a4fd6;
+    background: linear-gradient(180deg, rgba(35,45,149,1) 0%, rgba(26,79,214,1) 100%);
     color:#F1EEEF;
     ;
 }
 .cv {
     background-color: #d2d2d2;
     color: #202020;
+}
+table, th, td {
+    border:1px solid #202020;
+    border-collapse: collapse;    
+    padding: 2rem;
+    margin:auto;
+}
+@media (max-width:420px){
+    table{
+        margin-right: 1rem;
+    }
+}
+thead th{
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: 2px solid #202020;
+    background-color: #d2d2d2;
+    opacity: 0.9;
+}
+th {
+    background-color: #F1EEEF;
 }
 .footer {
     background-color: #202020;
