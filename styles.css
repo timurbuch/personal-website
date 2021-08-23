@@ -29,6 +29,7 @@ h1 {
     font-weight: bolder;
     margin-left: 5%;
 }
+
 h1, h2, h3 {
     Font-Family: 'Roboto Condensed', Sans-Serif;
 }
@@ -48,11 +49,24 @@ nav a {
     width: 100px;
     border-radius: 1rem;
     text-align: justify;
-    transition: 0.4s ease;
+    transition: 0.4s ease-in;
 }
 nav a:hover {
     font-size: 1.6rem;
     color: ghostwhite;
+}
+@media (max-width: 420px) {
+    h1 {
+        padding-top: 10vh;
+    }
+    nav {
+        flex-direction: row;
+    
+    }
+    nav a{
+        padding: 2vh 2vw;
+        margin-bottom: 2vh;
+    }
 }
 .hero {
     font-size: 3rem;
@@ -71,15 +85,6 @@ nav a:hover {
     margin:0 10%;
     font-size: 3rem;
     font-weight: normal;
-}
-figure {
-    background-color:lightblue;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-Family: 'Cabin', Sans-Serif;
 }
 section{
     margin-top: 5rem;
@@ -134,7 +139,7 @@ ul {
     margin-top: 0;
 }
 .interests, .skills {
-    background-color: #232D95;
+    background: linear-gradient(180deg, rgba(35,45,149,1) 0%, rgba(26,79,214,1) 100%);
 }
 .contact {
     color:#202020 ;
@@ -166,11 +171,13 @@ ul {
     margin-top: 2rem;
 }    
 .contact-links a {    
-    width: 95px;
-    height: 95px;
+    width: 75px;
+    height: 75px;
     object-fit: cover;
 }
 .contact-links a img {
+    width: 75px;
+    height: 75px;
     object-fit: cover;
     transition: 0.4s ease-in;
 }
@@ -178,13 +185,34 @@ ul {
     transform: translateY(5px);
 }
 .bio {
-    background-color: #1a4fd6;
+    background: linear-gradient(180deg, rgba(35,45,149,1) 0%, rgba(26,79,214,1) 100%);
     color:#F1EEEF;
     ;
 }
 .cv {
     background-color: #d2d2d2;
     color: #202020;
+}
+table, th, td {
+    border:1px solid #202020;
+    border-collapse: collapse;    
+    padding: 2rem;
+    margin:auto;
+}
+@media (max-width:420px){
+    table{
+        margin-right: 1rem;
+    }
+}
+thead th{
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: 2px solid #202020;
+    background-color: #d2d2d2;
+    opacity: 0.9;
+}
+th {
+    background-color: #F1EEEF;
 }
 .footer {
     background-color: #202020;
