@@ -49,22 +49,23 @@ nav a {
     width: 100px;
     border-radius: 1rem;
     text-align: justify;
-    transition: 0.4s ease;
+    transition: 0.4s ease-in;
 }
 nav a:hover {
     font-size: 1.6rem;
     color: ghostwhite;
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     h1 {
-        padding-top: 5vh;
+        padding-top: 10vh;
     }
     nav {
         flex-direction: row;
     
     }
     nav a{
-        padding: 0 2vw;
+        padding: 2vh 2vw;
+        margin-bottom: 2vh;
     }
 }
 .hero {
