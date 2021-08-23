@@ -29,6 +29,7 @@ h1 {
     font-weight: bolder;
     margin-left: 5%;
 }
+
 h1, h2, h3 {
     Font-Family: 'Roboto Condensed', Sans-Serif;
 }
@@ -53,6 +54,18 @@ nav a {
 nav a:hover {
     font-size: 1.6rem;
     color: ghostwhite;
+}
+@media (max-width: 400px) {
+    h1 {
+        padding-top: 5vh;
+    }
+    nav {
+        flex-direction: row;
+    
+    }
+    nav a{
+        padding: 0 2vw;
+    }
 }
 .hero {
     font-size: 3rem;
